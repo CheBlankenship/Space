@@ -17,13 +17,9 @@ def run_game():
     ship = Ship(screen)
     # Start the main loop for the game
     while True:
+        # These functions are defined in game_functions.py as gf
         gf.check_events()
-        # Mach for keybord and mouse events
-        screen.fill(ai_settings.bg_color)
-        # While it'S True it updates the page color
-        ship.blitme()
-        pygame.display.flip()
-
+        gf.update_screen(ai_settings, screen, ship)
     # Make the most recently screen visible.
 
 run_game()
