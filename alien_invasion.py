@@ -17,7 +17,6 @@ def run_game():
     ship = Ship(screen)
     # Start the main loop for the game
     while True:
-        # These functions are defined in game_functions.py as gf
         gf.check_events(ship)
         ship.update()
         gf.update_screen(ai_settings, screen, ship)
