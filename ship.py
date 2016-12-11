@@ -17,10 +17,10 @@ class Ship():
 
     def update(self):
         """Update the ships position"""
-        if self.moving_right == True:
-            self.rect.centerx += 1
-        if self.moving_left == True:
-            self.rect.centerx -= 1
+        # if self.moving_right == True:
+            # self.rect.centerx += 1
+        # if self.moving_left == True:
+            # self.rect.centerx -= 1
 
     def blitme(self):
         """Draw the current location """
