@@ -20,6 +20,7 @@ def run_game():
         gf.check_events(ship)
         ship.update()
         gf.update_screen(ai_settings, screen, ship)
-    # Make the most recently screen visible.
 
+
+# Make the most recently screen visible.
 run_game()
